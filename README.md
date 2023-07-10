@@ -12,6 +12,7 @@ tags:
 library_name: ultralytics
 library_version: 8.0.57
 inference: false
+pipeline_tag: image-segmentation
 ---
 
 YOLOv8s trained on solar panels dataset https://app.roboflow.com/rzeszow-university-of-technology/solar-panels-seg/2
