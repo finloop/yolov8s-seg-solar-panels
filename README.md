@@ -20,8 +20,19 @@ YOLOv8s trained on solar panels dataset https://app.roboflow.com/rzeszow-univers
 
 ## Training results
 
+![Results](train/results.png)
+
+*Labels:*
+![Labels](train/val_batch0_labels.jpg)
+
+*Predictions:*
+![Preds](train/val_batch0_pred.jpg)
+
 ## How to use
 
 1. Instal ultralytics package. Follow their guide here: [Quickstart](https://docs.ultralytics.com/quickstart/)
-2. Download model
-3. Run model
+2. Clone this repository.
+3. Run inference
+```sh
+yolo segment predict model=best.pt imgsz=640 save=True source=image.png
+```
